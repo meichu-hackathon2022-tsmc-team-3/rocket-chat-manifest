@@ -16,7 +16,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: chat-db-secret
-  namespace: chat
+  namespace: <YOUR_CHAT_APP_NAMESPACE>
 data:
   MONGO_URL: <MONGO_URL>
   MONGO_OPLOG_URL: <MONGO_OPLOG_URL>
