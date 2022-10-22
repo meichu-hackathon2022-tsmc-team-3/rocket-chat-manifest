@@ -1,0 +1,5 @@
+rocketchat:
+  namespace: chat
+  server:
+    replicaCount: 3
+    host: chat.tsmc.n0b.me
