@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rocketchat-server
-  namespace: {{ .Values.app.rocketchat.namespace }}
+  namespace: {{ .Values.rocketchat.namespace }}
 spec:
-  replicas: {{ .Values.app.rocketchat.server.replicaCount }}
+  replicas: {{ .Values.rocketchat.server.replicaCount }}
   selector:
     matchLabels:
       app: rocketchat-server

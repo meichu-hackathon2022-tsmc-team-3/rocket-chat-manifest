@@ -2,10 +2,10 @@ apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: rocket-vs
-  namespace: {{ .Values.app.rocketchat.namespace }}
+  namespace: {{ .Values.rocketchat.namespace }}
 spec:
   hosts:
-  - {{ .Values.app.rocketchat.server.host }}
+  - {{ .Values.rocketchat.server.host }}
   gateways:
   - rocket-gateway
   http:

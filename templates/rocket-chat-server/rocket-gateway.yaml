@@ -2,7 +2,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   name: rocket-gateway
-  namespace: {{ .Values.app.rocketchat.namespace }}
+  namespace: {{ .Values.rocketchat.namespace }}
 spec:
   selector:
     istio: ingressgateway
@@ -12,4 +12,4 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - {{ .Values.app.rocketchat.server.host }}
+    - {{ .Values.rocketchat.server.host }}
